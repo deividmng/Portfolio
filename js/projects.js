@@ -12,9 +12,10 @@ const projects = [
     {
         title: 'Project 2',
         description: 'Interactive platform developed with the latest web technologies.',
-        image: 'https://via.placeholder.com/600x400',
-        technologies: ['React', 'Node.js'],
-        link: '#'
+        image: '/spr.png',
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+        link: 'https://deividmng.github.io/S-P-R-Game/',
+        linkGit: 'https://github.com/deividmng/S-P-R-Game'
     },
     {
         title: 'Project 1',
