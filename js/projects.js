@@ -6,6 +6,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+
 const projects = [
     
     {
@@ -23,14 +24,7 @@ const projects = [
         link: 'https://blackjackgame22.netlify.app/',
         linkGit: 'https://github.com/deividmng/BlackJackGame/tree/autoDeal'
     },
-    {
-        title: 'Project 1',
-        description: 'A modern web application with unique features and responsive design.',
-        image: '../assets/img/Screenshot 2025-01-22 153722.png',
-        technologies: ['HTML', 'CSS', 'JavaScript'],
-        link: 'https://blackjackgame22.netlify.app/',
-        linkGit: 'https://github.com/deividmng/BlackJackGame/tree/autoDeal'
-    },
+
    
 ];
 
