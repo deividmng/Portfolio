@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 const projects = [
     
     {
-        title: 'Project 2',
+        title: 'Project 1',
         description: 'Interactive platform developed with the latest web technologies.',
         image: '/spr.png',
         technologies: ['HTML', 'CSS', 'JavaScript'],
@@ -18,7 +18,7 @@ const projects = [
         linkGit: 'https://github.com/deividmng/S-P-R-Game'
     },
     {
-        title: 'Project 1',
+        title: 'Project 2',
         description: 'A modern web application with unique features and responsive design.',
         image: '/game.png',
         technologies: ['HTML', 'CSS', 'JavaScript'],
@@ -26,12 +26,12 @@ const projects = [
         linkGit: 'https://github.com/deividmng/BlackJackGame/tree/autoDeal'
     },
     {
-        title: 'Project 1',
+        title: 'WeatherApp',
         description: 'A modern web application with unique features and responsive design.',
         image: '/game.png',
         technologies: ['HTML', 'CSS', 'JavaScript'],
-        link: 'https://blackjackgame22.netlify.app/',
-        linkGit: 'https://github.com/deividmng/BlackJackGame/tree/autoDeal'
+        link: 'https://weatherapp22david.netlify.app/',
+        linkGit: 'https://github.com/deividmng/WeatherApp'
     },
 
 
