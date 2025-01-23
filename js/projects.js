@@ -19,7 +19,7 @@ const projects = [
     {
         title: 'Project 1',
         description: 'A modern web application with unique features and responsive design.',
-        image: '../assets/img/game.png',
+        image: '../public/game.png',
         technologies: ['HTML', 'CSS', 'JavaScript'],
         link: 'https://blackjackgame22.netlify.app/',
         linkGit: 'https://github.com/deividmng/BlackJackGame/tree/autoDeal'
