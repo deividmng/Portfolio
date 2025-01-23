@@ -47,3 +47,5 @@ export function initSkills() {
         skillTags.appendChild(skillCard);
     });
 }
+
+

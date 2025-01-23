@@ -2,7 +2,8 @@ import { initTheme } from './theme.js';
 import { initProjects } from './projects.js';
 import { initSkills } from './skills.js';
 import { initSocial } from './social.js';
-import { initContact } from './contact.js';
+import { sendMail } from './contact.js';
+
 
 // Inicializar todos los módulos
 document.addEventListener('DOMContentLoaded', () => {
@@ -10,5 +11,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initProjects();
     initSkills();
     initSocial();
-    initContact();
+    sendMail();
 });

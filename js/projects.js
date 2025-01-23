@@ -1,24 +1,35 @@
 import Swiper from 'swiper';
 import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
+import '../styles/swiperSp.css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const projects = [
-    {
-        title: 'Project 1',
-        description: 'A modern web application with unique features and responsive design.',
-        image: 'https://via.placeholder.com/600x400',
-        technologies: ['HTML', 'CSS', 'JavaScript'],
-        link: '#'
-    },
+    
     {
         title: 'Project 2',
         description: 'Interactive platform developed with the latest web technologies.',
         image: 'https://via.placeholder.com/600x400',
         technologies: ['React', 'Node.js'],
         link: '#'
+    },
+    {
+        title: 'Project 1',
+        description: 'A modern web application with unique features and responsive design.',
+        image: '../assets/img/Screenshot 2025-01-22 153722.png',
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+        link: 'https://blackjackgame22.netlify.app/',
+        linkGit: 'https://github.com/deividmng/BlackJackGame/tree/autoDeal'
+    },
+    {
+        title: 'Project 1',
+        description: 'A modern web application with unique features and responsive design.',
+        image: '../assets/img/Screenshot 2025-01-22 153722.png',
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+        link: 'https://blackjackgame22.netlify.app/',
+        linkGit: 'https://github.com/deividmng/BlackJackGame/tree/autoDeal'
     },
    
 ];
@@ -27,21 +38,23 @@ function createProjectSlide(project) {
     return `
         <div class="swiper-slide">
             <div class="project-card">
-                <img src="${project.image}" alt="${project.title}" class="project-image">
+           
+                <img src="${project.image}" alt="${project.title}" class="project-background">
                 <div class="project-info">
-                    <h3 class="project-title">${project.title}</h3>
-                    <p class="project-description">${project.description}</p>
+                    <p class="project-description">${project.description}</p>                    
                     <div class="project-tech">
                         ${project.technologies.map(tech => 
                             `<span class="tech-tag">${tech}</span>`
                         ).join('')}
                     </div>
                     <a href="${project.link}" class="btn primary" target="_blank">View Project</a>
+                    <a href="${project.linkGit}" class="btn primary" target="_blank">Git</a>
                 </div>
             </div>
         </div>
     `;
 }
+
 
 function initializeSwiper() {
     return new Swiper('.swiper', {
