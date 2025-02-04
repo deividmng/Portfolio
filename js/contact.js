@@ -1,36 +1,42 @@
-import Swal from 'sweetalert2'; 
+import Swal from 'sweetalert2';
+import emailjs from 'emailjs-com';
+
 export function sendMail() {
     const contactForm = document.getElementById('contactForm');
-
+    emailjs.init('yBfuqxcNFXjnHAsfF');
     if (contactForm) {
-        // Agregar el evento 'submit' al formulario
         contactForm.addEventListener('submit', (e) => {
-            e.preventDefault(); 
+            e.preventDefault();
 
-            const name = document.getElementById("name").value; 
+            const name = document.getElementById("name").value; // Recoger el nombre
+            const email = document.getElementById("email_id").value; // Recoger el email
+            const message = document.getElementById("message").value; // Recoger el mensaje
+
             const parms = {
+                from_name: name,  // Cambié 'name' a 'from_name' como en la plantilla
                 name: name,
-                email: document.getElementById("email_id").value,
-                message: document.getElementById("message").value,
+                email_id: email,  // Cambié 'email' a 'email_id' como en la plantilla
+                message: message,
             };
 
-            
-            emailjs.send("service_uvav23f", "template_rs30izi", parms)
+            // Enviar el correo
+            emailjs.send("service_raut8yg", "template_rs30izi", parms)
                 .then(() => {
                     Swal.fire({
                         title: 'Success!',
                         text: `Message sent successfully, ${name}!`,
                         icon: 'success',
-                        confirmButtonText: 'Cool'
+                        confirmButtonText: 'Cool',
+                        timer:3000
                     });
                     contactForm.reset();
                 })
                 .catch((error) => {
                     Swal.fire({
-                        title: 'Success!',
-                        text: `Message sent successfully, ${name}!`, 
-                        icon: 'success',
-                        confirmButtonText: 'Cool'
+                        title: 'Error!',
+                        text: `Something went wrong, ${name}. Please try again.`,
+                        icon: 'error',
+                        confirmButtonText: 'Ok'
                     });
                     contactForm.reset(); 
                 });
