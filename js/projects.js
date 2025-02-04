@@ -7,10 +7,27 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 
+const techIcons = {
+    'HTML': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+    'CSS': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+    'JavaScript': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+    'Python': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+    'SQL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' // Puedes cambiar a PostgreSQL si es necesario
+};
+
+
 const projects = [
+    {
+        title: 'Flashcards App',
+        description: 'A modern web application with unique features and responsive design.',
+        image: '/flash.png',
+        technologies: ['HTML', 'CSS', 'Python'],
+        link: 'https://github.com/deividmng/quizPy',
+        linkGit: 'https://github.com/deividmng/quizPy'
+    },
     
     {
-        title: 'Project 1',
+        title: 'S-P-R-Game',
         description: 'Interactive platform developed with the latest web technologies.',
         image: '/spr.png',
         technologies: ['HTML', 'CSS', 'JavaScript'],
@@ -18,7 +35,7 @@ const projects = [
         linkGit: 'https://github.com/deividmng/S-P-R-Game'
     },
     {
-        title: 'Project 2',
+        title: 'Blackjack Game',
         description: 'A modern web application with unique features and responsive design.',
         image: '/game.png',
         technologies: ['HTML', 'CSS', 'JavaScript'],
@@ -28,10 +45,27 @@ const projects = [
     {
         title: 'WeatherApp',
         description: 'A modern web application with unique features and responsive design.',
-        image: '/game.png',
+        image: '/weather.png',
         technologies: ['HTML', 'CSS', 'JavaScript'],
         link: 'https://weatherapp22david.netlify.app/',
         linkGit: 'https://github.com/deividmng/WeatherApp'
+    },
+    {
+        title: 'To doo',
+        description: 'A modern web application with unique features and responsive design.',
+        image: '/todo.png',
+        technologies: ['HTML', 'CSS', 'Python'],
+        link: 'https://tareas-py.onrender.com/tasks/create/',
+        linkGit: 'https://github.com/deividmng/tareas_py'
+    },
+   
+    {
+        title: 'S-P-R-Game',
+        description: 'Interactive platform developed with the latest web technologies.',
+        image: '/spr.png',
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+        link: 'https://deividmng.github.io/S-P-R-Game/',
+        linkGit: 'https://github.com/deividmng/S-P-R-Game'
     },
 
 
@@ -41,14 +75,13 @@ const projects = [
 function createProjectSlide(project) {
     return `
         <div class="swiper-slide">
+        <p class="project-description">${project.description}</p> 
             <div class="project-card">
-           
                 <img src="${project.image}" alt="${project.title}" class="project-background">
-                <div class="project-info">
-                    <p class="project-description">${project.description}</p>                    
+                <div class="project-info">                   
                     <div class="project-tech">
-                        ${project.technologies.map(tech => 
-                            `<span class="tech-tag">${tech}</span>`
+                        ${project.technologies?.map(tech => 
+                            techIcons[tech] ? `<img src="${techIcons[tech]}" alt="${tech}" class="tech-icon">` : ''
                         ).join('')}
                     </div>
                     <a href="${project.link}" class="btn primary" target="_blank">View Project</a>

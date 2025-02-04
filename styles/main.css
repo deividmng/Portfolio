@@ -1,8 +1,16 @@
+@import url("./links.css");
+
+.tech-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
 :root {
     --primary-color: #4a90e2;
     --secondary-color: #2c3e50;
     --text-color: #333;
-    --bg-color: #fff;
+    --bg-color: #ffffffec;
     --accent-color: #e74c3c;
     --transition: all 0.3s ease;
 }
@@ -74,7 +82,7 @@ h2 {
     grid-template-columns: 60% 40%;  
     grid-template-areas: "content image";  
     height: 50vh;  
-    background: linear-gradient(135deg, var(--bg-color), var(--secondary-color)); 
+    background: linear-gradient(135deg, var(--secondary-color), var(--bg-color)); 
 }
 
 .hero-content {
@@ -86,8 +94,8 @@ h2 {
 }
 
 .hero::before {
-    content: "";  /* Crea un pseudo-elemento */
-    grid-area: image;  /* Asigna esta zona a la imagen */
+    content: ""; 
+    grid-area: image;  
     background-image: url(../assets/img/me.png); 
     background-size: cover;
     background-position: center;
@@ -99,8 +107,8 @@ h2 {
     box-shadow: inset 0 0 0 9px #ffffff4d;
     order: 1;
     justify-self: center;
-    width: 450px;
-    height: 450px;
+    width: 350px;
+    height: 350px;
     animation: profile__animate 8s ease-in-out infinite 1s
     
 }
@@ -157,7 +165,6 @@ h2 {
     height: 100%;
     object-fit: cover; 
     z-index: 1; 
-    filter: brightness(0.7); 
 }
 
 .project-info {
@@ -171,7 +178,7 @@ h2 {
 /* about area */
 
 .about-text {
-    max-width: 800px;
+
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -190,7 +197,7 @@ h2 {
 .about-text p:first-of-type {
     font-size: 24px;
     font-weight: bold;
-    color: #007bff;
+    color: #336dab;
 }
 
 @media (max-width: 768px) {

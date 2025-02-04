@@ -22,6 +22,18 @@ const skills = [
     {
         name: 'Git',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg'
+    },
+    {
+        name: 'Python',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python'
+    },
+    {
+        name: 'Bootstrap',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap'
+    },
+    {
+        name: 'MySQL',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"'
     }
 ];
 

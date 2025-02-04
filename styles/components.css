@@ -40,6 +40,13 @@
     font-weight: bold;
     cursor: pointer;
     border: none;
+    background-color: rgba(0, 0, 0, 0.7) !important; /* Fondo negro con transparencia */
+    color: white !important;
+    opacity: 0.8 !important; /* Hace que el botón sea un poco transparente */
+}
+
+.btn:hover {
+    opacity: 1 !important; /* Al pasar el cursor, el botón se vuelve sólido */
 }
 
 .primary {
@@ -106,6 +113,10 @@
 
 .project-info {
     transform: translateZ(30px);
+    padding-top: 150px;
+    padding-left: 0;
+    padding-bottom: 0;
+    
 }
 
 .project-title {
@@ -117,6 +128,7 @@
 .project-description {
     margin-bottom: 1.5rem;
     color: var(--text-color);
+    text-align: center;
 }
 
 .project-tech {
@@ -224,6 +236,13 @@
 }
 
 /* Formulario de contacto */
+
+.contact {
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
+
 .contact-container {
     max-width: 600px;
     margin: 0 auto;
@@ -255,8 +274,9 @@
 
 /* Footer */
 .footer {
+    padding-top: 10px;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     background-color: var(--secondary-color);
     color: var(--bg-color);
 }
