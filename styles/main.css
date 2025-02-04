@@ -1,4 +1,7 @@
 @import url("./links.css");
+@import url("./animations.css");
+@import url("./components.css");
+@import url("./swiperSp.css");
 
 .tech-icon {
     width: 30px;
@@ -107,9 +110,11 @@ h2 {
     box-shadow: inset 0 0 0 9px #ffffff4d;
     order: 1;
     justify-self: center;
+    padding-top: 130px;
     width: 350px;
     height: 350px;
     animation: profile__animate 8s ease-in-out infinite 1s
+
     
 }
 
@@ -152,7 +157,7 @@ h2 {
 
 .project-card {
     position: relative;
-    overflow: hidden; /* Asegura que la imagen no salga del contenedor */
+    overflow: hidden; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

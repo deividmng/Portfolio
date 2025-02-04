@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/components.css" />
     <link rel="stylesheet" href="styles/animations.css" />
+    <link rel="stylesheet" href="styles/mediaQ.css" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Importa FontAwesome en el head -->
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> -->
@@ -14,6 +15,8 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
     ></script>
+    <script type="module" src="js/contact.js"></script>
+  
   </head>
   <body>
     <header class="header">
@@ -63,10 +66,11 @@
         <div class="contact-container">
           <form id="contactForm" class="contact-form">
             <input type="text" id="name" placeholder="Name" required />
-            <input type="email" id="email_id" placeholder="Email" required />
+            <input type="email" id="email_id" placeholder="Email" />
             <textarea placeholder="Message" id="message" required></textarea>
             <button type="submit" class="btn primary">Send Message</button>
-          </form>
+        </form>
+        
         </div>
       </section>
 
