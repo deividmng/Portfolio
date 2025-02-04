@@ -8,18 +8,18 @@ export function sendMail() {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
 
-            const name = document.getElementById("name").value; // Recoger el nombre
-            const email = document.getElementById("email_id").value; // Recoger el email
-            const message = document.getElementById("message").value; // Recoger el mensaje
+            const name = document.getElementById("name").value; 
+            const email = document.getElementById("email_id").value; 
+            const message = document.getElementById("message").value; 
 
             const parms = {
-                from_name: name,  // Cambié 'name' a 'from_name' como en la plantilla
+                from_name: name,  
                 name: name,
-                email_id: email,  // Cambié 'email' a 'email_id' como en la plantilla
+                email_id: email,  
                 message: message,
             };
 
-            // Enviar el correo
+            
             emailjs.send("service_raut8yg", "template_rs30izi", parms)
                 .then(() => {
                     Swal.fire({
