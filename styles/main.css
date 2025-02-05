@@ -54,7 +54,7 @@ body {
 }
 
 section {
-    padding: 5rem 2rem;
+    padding: 3rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,12 +80,19 @@ h2 {
 }
 
 /* img section */
+
+
+#home {
+    padding-top: 5rem !important;
+}
 .hero {
     display: grid;
     grid-template-columns: 60% 40%;  
     grid-template-areas: "content image";  
     height: 50vh;  
     background: linear-gradient(135deg, var(--secondary-color), var(--bg-color)); 
+    
+    
 }
 
 .hero-content {
@@ -93,7 +100,8 @@ h2 {
     padding: 20px;
     z-index: 1; 
     color: white;
-    padding-top: 150px;
+  
+  
 }
 
 .hero::before {
@@ -110,11 +118,10 @@ h2 {
     box-shadow: inset 0 0 0 9px #ffffff4d;
     order: 1;
     justify-self: center;
-    padding-top: 130px;
-    width: 350px;
-    height: 350px;
+    min-width: 250px;
+    max-height: 300px;
+    padding-top: 110px;
     animation: profile__animate 8s ease-in-out infinite 1s
-
     
 }
 
