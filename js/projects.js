@@ -17,17 +17,17 @@ const techIcons = {
 
 const projects = [
     {
-        title: 'Flashcards App',
-        description: 'A modern web application with unique features and responsive design.',
+        title: 'Quiz Game App',
+        // description: 'programming quiz game',
         image: '/flash.png',
-        technologies: ['HTML', 'CSS', 'Python'],
+        technologies: ['HTML', 'CSS', 'Python','JavaScript','SQL'],
         link: 'https://github.com/deividmng/quizPy',
         linkGit: 'https://github.com/deividmng/quizPy'
     },
     
     {
         title: 'S-P-R-Game',
-        description: 'Interactive platform developed with the latest web technologies.',
+        // description: 'The rock paper scissors game',
         image: '/spr.png',
         technologies: ['HTML', 'CSS', 'JavaScript'],
         link: 'https://deividmng.github.io/S-P-R-Game/',
@@ -35,7 +35,7 @@ const projects = [
     },
     {
         title: 'Blackjack Game',
-        description: 'A modern web application with unique features and responsive design.',
+        // description: 'A modern web application with unique features and responsive design.',
         image: '/game.png',
         technologies: ['HTML', 'CSS', 'JavaScript'],
         link: 'https://blackjackgame22.netlify.app/',
@@ -50,31 +50,20 @@ const projects = [
         linkGit: 'https://github.com/deividmng/WeatherApp'
     },
     {
-        title: 'To doo',
+        title: 'To do app',
         description: 'A modern web application with unique features and responsive design.',
         image: '/todo.png',
         technologies: ['HTML', 'CSS', 'Python'],
         link: 'https://tareas-py.onrender.com/tasks/create/',
         linkGit: 'https://github.com/deividmng/tareas_py'
     },
-   
-    {
-        title: 'S-P-R-Game',
-        description: 'Interactive platform developed with the latest web technologies.',
-        image: '/spr.png',
-        technologies: ['HTML', 'CSS', 'JavaScript'],
-        link: 'https://deividmng.github.io/S-P-R-Game/',
-        linkGit: 'https://github.com/deividmng/S-P-R-Game'
-    },
-
-
-   
+     
 ];
 
 function createProjectSlide(project) {
     return `
         <div class="swiper-slide">
-        <p class="project-description">${project.description}</p> 
+        <h3 class="project-description">${project.title}</h3> 
             <div class="project-card">
                 <img src="${project.image}" alt="${project.title}" class="project-background">
                 <div class="project-info">                   

@@ -214,18 +214,39 @@
 }
 
 /* Navegación del slider */
+
+.swiper-slide {
+    flex-shrink: 0 !important;
+    width: 65% !important;
+    height: 140% !important;
+    position: relative !important;
+    transition-property: transform !important;
+    display: block !important;
+    padding: 40px !important;
+    padding: 5rem !important;
+}
+
+.swiper-pagination {
+    position: absolute;
+    text-align: center;
+    transition: 300ms opacity; 
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+    margin-bottom: 38px;
+}
+
 .slider-nav {
-    position:absolute;
+    position: absolute;
     bottom: 1rem;
     left: 50%;
+    margin-bottom: 10px;
     transform: translateX(-50%);
     display: flex;
-   
     z-index: 10;
 }
 
+
 .slider-button {
-    
     border: none;
     width: 40px;
     height: 40px;
