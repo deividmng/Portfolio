@@ -6,6 +6,10 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+
+import Splide from '@splidejs/splide';
+import '@splidejs/splide/css';
+
 const techIcons = {
     'HTML': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
     'CSS': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
@@ -59,6 +63,7 @@ const projects = [
     },
      
 ];
+
 
 function createProjectSlide(project) {
     return `

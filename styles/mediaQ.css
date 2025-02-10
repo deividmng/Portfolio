@@ -4,3 +4,51 @@
         display: none;  
     }
 }
+
+
+
+@media (max-width: 338px) {
+    .swiper-slide {
+        flex-shrink: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        position: relative !important;
+        transition-property: transform !important;
+        display: block !important; 
+        background-color: red !important; /* Puedes cambiarlo */
+        padding: 10px !important;
+        text-align: center;
+    }
+
+    .project-card {
+        width: 90% !important;
+        max-width: 300px !important;
+        margin: auto !important;
+    }
+
+    .swiper .swiper-wrapper {
+        flex-direction: column;
+    }
+
+    .project-background {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .project-tech {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .swiper-pagination {
+        bottom: 5px !important;
+    }
+
+    .slider-nav {
+        bottom: 20px !important;
+        display: flex !important;
+        gap: 15px !important; /* Más espacio entre botones */
+    }
+}
+
